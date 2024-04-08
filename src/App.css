@@ -1,38 +1,122 @@
-.App {
+.logoimage {
+  width: 250px;
+  height: 250px;
+  margin-left: 200px;
+}
+
+header {
+  background-color: darkblue;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+header ul {
+  display: flex;
+  justify-content: flex-start;
+
+
+}
+
+ul li {
+  list-style: none;
+}
+
+ul a {
+  color: yellow;
+  font-size: 30px;
+  font-family: fantasy;
+  width: 200px;
+  height: 70px;
+  border-radius: 30px;
+  margin: 10px;
+  list-style: none;
+  text-decoration: none;
+
+
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  border: 7px ridge rgb(31, 0, 61);
+  box-shadow: 3px 5px 4px 5px rgba(5, 11, 125, 0.586);
+  width: 60vw;
+  margin: 20px;
+  justify-content: center;
+  align-items: center;
+  transition: all ease-in-out 0.5s;
+}
+
+article:hover {
+  transform: translate(-5px 20px);
+}
+
+.h1title {
+  color: rgb(255, 119, 0);
+  font-size: 30px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.conte {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 1rem;
 }
 
-.App-link {
-  color: #61dafb;
+.conte h2 {
+  color: crimson;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.h1stats {
+  color: rgb(84, 63, 221);
+  font-size: 40px;
+  font-family: cursive;
+  text-align: center;
+}
+
+.uldiv {
+  display: flex;
+  flex-direction: column;
+  border: 3px rgba(255, 255, 4, 0.485) dashed;
+  border-radius: 20px;
+  width: 40vw;
+}
+
+.uldiv h2 {
+  margin-left: 20px;
+  color: rgb(171, 210, 0);
+}
+
+.uldiv {
+  transform: translate(-20px 15px);
+
+}
+
+ul h2 {
+  font-size: 25px;
+  color: rgb(8, 77, 124);
+  text-align: center;
+}
+
+.imagetype {
+  width: 30px;
+  height: 30px;
+}
+
+.namePokemon {
+
+  color: rgb(0, 240, 80);
+  font-size: 35px;
 }
