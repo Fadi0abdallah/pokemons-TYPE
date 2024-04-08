@@ -3,6 +3,8 @@ import Header from './Header';
 import PokemonsFeu from './PokemonsFeu';
 import PokemonsEau from './PokemonsEau';
 import PokemonsPlante from './pokemonsPlante';
+import PokemonsAllType from './PokemonsAllType';
+import { type } from '@testing-library/user-event/dist/type';
 // import List100Pokemons from './List100Pokemons';
 // import PokemonsType from './PokemonsType';
 
@@ -10,12 +12,16 @@ import PokemonsPlante from './pokemonsPlante';
 function App() {
   return (
     <>
-      <Header />
+      <Header type={"type"} />
       {/* <List100Pokemons /> */}
       {/* <PokemonsType /> */}
-      <PokemonsPlante />
+      {/* <PokemonsPlante />
       <PokemonsEau />
-      <PokemonsFeu />
+      <PokemonsFeu /> */}
+      <PokemonsAllType type={"Eau"} />
+      <PokemonsAllType type={"Feu"} />
+      <PokemonsAllType type={"Plante"} />
+      <PokemonsAllType type={"Acier"} />
     </>
   );
 }

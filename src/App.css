@@ -89,14 +89,14 @@ article:hover {
 .uldiv {
   display: flex;
   flex-direction: column;
-  border: 3px rgba(255, 255, 4, 0.485) dashed;
+  border: 3px rgba(20, 20, 8, 0.705) dashed;
   border-radius: 20px;
   width: 40vw;
 }
 
 .uldiv h2 {
   margin-left: 20px;
-  color: rgb(171, 210, 0);
+  color: rgb(243, 153, 153);
 }
 
 .uldiv {
