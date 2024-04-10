@@ -25,13 +25,16 @@ const PokemonsCherche = () => {
 
     return (
         <section >
+            <article>
 
-            {<form onSubmit={namePokemonscherche}>
-                <label htmlFor="site-search">Search the Pokemon:</label>
-                <input type="text" name="changePokemon" />
-                <input type="submit" />
-            </form>
-            }
+
+                {<form onSubmit={namePokemonscherche}>
+                    <label htmlFor="site-search">Search the Pokemon:</label>
+                    <input type="text" name="changePokemon" />
+                    <input type="submit" />
+                </form>
+                }
+            </article>
 
             {charchePokemon === false && <p>Pokemon non trouvé</p>}
 

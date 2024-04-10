@@ -1,17 +1,18 @@
+import { Link } from "react-router-dom"
 
 const Header = () => {
     return (
         <header>
             <ul>
 
-                {<li><a href="http://localhost:3002/">Home Page</a></li>}
+                {<li><Link to="/">Home Page</Link></li>}
                 <li><a href="">|</a></li>
-                {<li><a href="http://localhost:3002/serche">Serche Pokemons </a></li>}
+                {<li><Link to="/serche">Serche Pokemons </Link></li>}
                 <li><a href="">|</a></li>
-                {<li><a href="http://localhost:3002/ResistancePokemon">Pokemons Resistance</a></li>}
+                {<li><Link to="/ResistancePokemon">Pokemons Resistance</Link></li>}
                 <li><a href="">|</a></li>
                 {/* <li><a href="#Acier">Pokemons Acier</a></li> */}
-                {<li><a href="http://localhost:3002/Generation">Pokemons Generation 5</a></li>
+                {<li>< Link to="/Generation">Pokemons Generation 5</Link></li>
                /* <li><a href="">|</a></li>
                 <li><a href="#2">Pokemons Generation 2</a></li>
                 <li><a href="#3">Pokemons Generation 3</a></li> */}
