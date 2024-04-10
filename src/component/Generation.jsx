@@ -4,8 +4,8 @@ const Generation = ({ gener }) => {
     const [generation, setGeneration] = useState([])
     useEffect(() => {
         fetch("https://pokebuildapi.fr/api/v1/pokemon/generation/" + gener)
-            .then((repons) => {
-                return repons.json()
+            .then((respons) => {
+                return respons.json()
                     .then((data) => {
                         setGeneration(data)
                     })
