@@ -8,7 +8,7 @@ const PokemonsAllType = ({ type }) => {
             }).then((data) => {
                 setPokemonsType(data)
             })
-        console.log("render");
+        console.log("rendu");
     }, [])
 
     return (
@@ -16,7 +16,7 @@ const PokemonsAllType = ({ type }) => {
             <h1 className="h1title">POKEMON {type}</h1>
             {pokemonsType.map((elementtype) => {
                 return (
-                    <article>
+                    <article key={elementtype.id}>
 
                         <h1 className="namePokemon">{elementtype.name}</h1>
                         {elementtype.apiTypes.map((eleType) => {
@@ -33,7 +33,7 @@ const PokemonsAllType = ({ type }) => {
                         <img src={elementtype.image} alt={elementtype.name} />
                         <div className="uldiv">
                             <h1 className="h1stats">Stats</h1>
-                            <h2>HP :   {elementtype.stats.hp}</h2>
+                            <h2>HP :   {elementtype.stats.HP}</h2>
                             <h2>Attack :     {elementtype.stats.attack}</h2>
                             <h2> Defense :    {elementtype.stats.defense}</h2>
                             <h2> special_attack :    {elementtype.stats.special_attack}</h2>

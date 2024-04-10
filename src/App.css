@@ -5,7 +5,7 @@
 }
 
 header {
-  background-color: darkblue;
+
   height: 200px;
   display: flex;
   align-items: center;
@@ -48,12 +48,15 @@ article {
   display: flex;
   flex-direction: column;
   border: 7px ridge rgb(31, 0, 61);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
   box-shadow: 3px 5px 4px 5px rgba(5, 11, 125, 0.586);
   width: 60vw;
   margin: 20px;
   justify-content: center;
   align-items: center;
   transition: all ease-in-out 0.5s;
+  background-color: #fdd624;
 }
 
 article:hover {
@@ -96,7 +99,7 @@ article:hover {
 
 .uldiv h2 {
   margin-left: 20px;
-  color: rgb(243, 153, 153);
+  color: rgb(201, 40, 40);
 }
 
 .uldiv {
@@ -117,6 +120,7 @@ ul h2 {
 
 .namePokemon {
 
-  color: rgb(0, 240, 80);
+  color: rgb(0, 0, 0);
   font-size: 35px;
+  font-family: monospace;
 }
